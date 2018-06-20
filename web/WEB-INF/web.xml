@@ -13,8 +13,34 @@
         <servlet-class>initPack.Servlet_3</servlet-class>
         <!--load-on-start使用-->
         <!--1表示被init的顺序-->
+        <!--当网站启动的时候，可能会初始化一些数据（比如创建临时表，比如网站有些要求定时完成的任务（定时备份，定时写日志，定时发送邮件））-->
         <load-on-startup>1</load-on-startup>
     </servlet>
+    <servlet>
+        <servlet-name>ServletConfigTest</servlet-name>
+        <servlet-class>initPack.ServletConfigTest</servlet-class>
+        <!-- 配置servlet信息，只能用于单个Servlet-->
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>version</param-name>
+            <param-value>1.0</param-value>
+        </init-param>
+        <init-param>
+            <param-name>author</param-name>
+            <param-value>smallk</param-value>
+        </init-param>
+    </servlet>
+    <!--此处的配置参数，可以被所有Servlet读取-->
+    <!--
+    <context-param>
+        <param-name></param-name>
+        <param-value></param-value>
+    </context-param>
+    -->
+    
     <servlet-mapping>
         <servlet-name>Servlet_1</servlet-name>
         <url-pattern>/Servlet_1</url-pattern>
@@ -27,10 +53,13 @@
         <servlet-name>Servlet_2</servlet-name>
         <url-pattern>/s2</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletConfigTest</servlet-name>
+        <url-pattern>/sct</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
 </web-app>
-<!--当网站启动的时候，可能会初始化一些数据（比如创建临时表，比如网站有些要求定时完成的任务（定时备份，定时写日志，定时发送邮件））-->
