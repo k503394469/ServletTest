@@ -34,7 +34,7 @@ protected void processRequest(HttpServletRequest request, HttpServletResponse re
         Enumeration <String> initParamNames=this.getServletConfig().getInitParameterNames();
         while (initParamNames.hasMoreElements()) {            
             String names=initParamNames.nextElement();
-            out.println(names);
+            out.println(names+"\n");
             out.println(this.getServletConfig().getInitParameter(names));
         }
     } 
