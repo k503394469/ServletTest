@@ -17,7 +17,7 @@ public class SendEmailThread extends Thread {
         try {
             while (true) {
 
-                //每休眠一分钟，就扫描SendEmai表，查找所要发送的邮件
+                //每休眠一分钟，就扫描SendEmai表，查找�?要发送的邮件
                 Thread.sleep(10 * 1000);
                 System.out.println("第" + (++i) + "封");
             }

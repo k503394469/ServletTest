@@ -40,7 +40,18 @@
         <param-value></param-value>
     </context-param>
     -->
-    
+    <servlet>
+        <servlet-name>RequestTest</servlet-name>
+        <servlet-class>initPack.RequestTest</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Error</servlet-name>
+        <servlet-class>initPack.Error</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MyImportServlet</servlet-name>
+        <servlet-class>initPack.MyImportServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Servlet_1</servlet-name>
         <url-pattern>/Servlet_1</url-pattern>
@@ -56,6 +67,18 @@
     <servlet-mapping>
         <servlet-name>ServletConfigTest</servlet-name>
         <url-pattern>/sct</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RequestTest</servlet-name>
+        <url-pattern>/RequestTest</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Error</servlet-name>
+        <url-pattern>/Error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MyImportServlet</servlet-name>
+        <url-pattern>/MyImportServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
