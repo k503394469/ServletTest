@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-public class Servlet_2 extends HttpServlet {
+public class ResponseTest_2 extends HttpServlet {
    
 protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
@@ -22,8 +22,7 @@ protected void processRequest(HttpServletRequest request, HttpServletResponse re
                 response.setContentType("text/html");
                 response.setCharacterEncoding("utf-8");
                 PrintWriter out=response.getWriter();
-                //5秒后去goto页面（延时跳转或者刷新）
-                response.setHeader("Refresh", "5;url=/ServletTest/goto.html");
+                out.print(getClass());
     } 
 
     @Override

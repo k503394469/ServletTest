@@ -33,7 +33,7 @@ public class Servlet_3 extends HttpServlet {
         System.out.println("创建数据库，表，读取参数");
         //创建一个线程
         SendEmailThread sendEmailThread=new SendEmailThread();
-        sendEmailThread.start();
+        //sendEmailThread.start();
     }
     
 

@@ -5,10 +5,6 @@
         <servlet-class>initPack.Servlet_1</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Servlet_2</servlet-name>
-        <servlet-class>initPack.Servlet_2</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>Servlet_3</servlet-name>
         <servlet-class>initPack.Servlet_3</servlet-class>
         <!--load-on-start使用-->
@@ -52,6 +48,22 @@
         <servlet-name>MyImportServlet</servlet-name>
         <servlet-class>initPack.MyImportServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ResponseTest_1</servlet-name>
+        <servlet-class>initPack.ResponseTest_1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ResponseTest_2</servlet-name>
+        <servlet-class>initPack.ResponseTest_2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlet_2</servlet-name>
+        <servlet-class>initPack.Servlet_2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DownloadServlet</servlet-name>
+        <servlet-class>initPack.DownloadServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Servlet_1</servlet-name>
         <url-pattern>/Servlet_1</url-pattern>
@@ -59,10 +71,6 @@
     <servlet-mapping>
         <servlet-name>Servlet_1</servlet-name>
         <url-pattern>/s1</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Servlet_2</servlet-name>
-        <url-pattern>/s2</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ServletConfigTest</servlet-name>
@@ -79,6 +87,22 @@
     <servlet-mapping>
         <servlet-name>MyImportServlet</servlet-name>
         <url-pattern>/MyImportServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ResponseTest_1</servlet-name>
+        <url-pattern>/ResponseTest_1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ResponseTest_2</servlet-name>
+        <url-pattern>/ResponseTest_2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servlet_2</servlet-name>
+        <url-pattern>/Servlet_2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DownloadServlet</servlet-name>
+        <url-pattern>/DownloadServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
